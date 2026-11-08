@@ -1,0 +1,44 @@
+body {
+  font-family: Arial;
+  margin: 20px;
+  background-color: white;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  color: black;
+}
+
+
+.box1, .box2, .box3, .box4 {
+  border: 1px solid gray;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+hr {
+  margin: 20px 0;
+}
+
+
+.box1 p {
+  color: red;
+}
+
+
+.box2 > p {
+  color: blue;
+}
+
+
+.box3 h3 + p {
+  color: green;
+}
+
+
+.box4 h3 ~ p {
+  color: orange;
+}

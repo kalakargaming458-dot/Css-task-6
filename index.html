@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>CSS Combinators</h1>
+  <p>Combinator matlab do selectors ke beech ka rishta.</p>
+
+
+  <h2>1. Descendant - div p</h2>
+  <p>Div ke andar kahin bhi ho, sab p red honge.</p>
+  <div class="box1">
+    <p>Ye direct p hai - RED</p>
+    <div>
+      <p>Ye andar wala p hai - YE BHI RED</p>
+    </div>
+  </div>
+  <p>Ye bahar hai - RED NAHI</p>
+
+  <hr>
+
+ 
+  <h2>2. Child - div > p</h2>
+  <p>Sirf direct bacha blue hoga.</p>
+  <div class="box2">
+    <p>Ye direct hai - BLUE</p>
+    <div>
+      <p>Ye andar wala hai - BLUE NAHI</p>
+    </div>
+  </div>
+
+  <hr>
+
+
+  <h2>3. Adjacent - h2 + p</h2>
+  <p>Turant baad wala ek hi green hoga.</p>
+  <div class="box3">
+    <h3>Heading</h3>
+    <p>Turant baad - GREEN</p>
+    <p>Dusra p - GREEN NAHI</p>
+  </div>
+
+  <hr>
+
+ 
+  <h2>4. General - h2 ~ p</h2>
+  <p>Baad wale saare orange honge.</p>
+  <div class="box4">
+    <h3>Heading</h3>
+    <p>Pehla - ORANGE</p>
+    <span>Beech me span</span>
+    <p>Dusra - YE BHI ORANGE</p>
+  </div>
+
+</body>
+</html>
